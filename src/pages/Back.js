@@ -16,18 +16,7 @@ const Menu = () => {
     setCartItems([...cartItems, menu]);
   };
 
-  const removeFromCart = (menu) => {
-     
-    let t=false;
-    {cartItems.map((men)=>{
-      if(men.id===menu.id & !t)
-      {
-      setTot((tot) => tot - menu.price);
-      t==true;
-      }
-    })}
-    setCartItems(updatedCart);
-  };
+ 
 
   return (
     <Layout>
@@ -49,8 +38,8 @@ const Menu = () => {
                 <Typography variant="body2">{menu.description}</Typography>
                 {/* Add to Cart Button */}
                 <button style={{ backgroundColor: 'blue', marginTop: '20px' }} onClick={() => addToCart(menu)}>Add To Cart</button>
-                <br />
-                <button style={{ backgroundColor: 'red', marginTop: '20px' }} onClick={() => removeFromCart(menu)}>Remove from Cart</button>
+                <br />                
+
               </CardContent>
             </CardActionArea>
           </Card>
