@@ -1,15 +1,14 @@
 
-
-import React, { useState, useContext } from "react";
+ import React, {  useContext } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../component/Layout/Layout";
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 import { MenuList } from "../data/data";
-import CartPage from "./CartPage";
+
 import UserContext from "../UserContext";
 
 const Menu = () => {
-  const { cartItems, setCartItems, tot, setTot } = useContext(UserContext);
+  const { cartItems, setCartItems,tot,  setTot } = useContext(UserContext);
 
   const addToCart = (menu) => {
     setTot((tot) => tot + menu.price);
@@ -45,6 +44,7 @@ const Menu = () => {
           </Card>
         ))}
       </Box>
+      {tot}
       {/* Render Cart Component */}
       <Link to='/cart'>
         <button>
@@ -56,3 +56,4 @@ const Menu = () => {
 };
 
 export default Menu;
+
