@@ -3,7 +3,7 @@ import Layout from "../component/Layout/Layout";
 import { Link } from "react-router-dom";
 import Banner from "../images/banner.jpeg";
 import "../styles/HomeStyles.css";
-import {MenuList} from "../data/data.js"
+
 const Home = () => {
   return (
     <Layout>
