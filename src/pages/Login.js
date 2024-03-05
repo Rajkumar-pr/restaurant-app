@@ -84,7 +84,7 @@ const App = () => {
       </button>
     </div>
 
-     
+     {message}
     </div>
     </Layout>
   );
