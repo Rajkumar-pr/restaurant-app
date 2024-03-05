@@ -27,7 +27,7 @@ const CartPage = () => {
                     {car.name}
                   </td>
                   <td>
-                    <img src={car.image} style={{height:'30px',width:'30px'}} alt='image'/>
+                    <img src={car.image} style={{height:'30px',width:'30px'}} alt=''/>
                   </td>
                   <td>
                     {car.price}
