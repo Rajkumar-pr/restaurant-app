@@ -1,12 +1,12 @@
 // Cart.js
 // Menu.js
 // CartPage.js
-import React ,{useState,useContext} from "react";
+import React ,{useContext} from "react";
 import UserContext from "../UserContext";
 import { Link } from "react-router-dom";
 import Layout from "../component/Layout/Layout";
 const CartPage = () => {
-  const {cartItems,setCartItems,tot,setTot}=useContext(UserContext);
+  const {cartItems,tot}=useContext(UserContext);
 
   return (
     <Layout>
@@ -27,7 +27,7 @@ const CartPage = () => {
                     {car.name}
                   </td>
                   <td>
-                    <img src={car.image} style={{height:'30px',width:'30px'}}/>
+                    <img src={car.image} style={{height:'30px',width:'30px'}} alt='image'/>
                   </td>
                   <td>
                     {car.price}
