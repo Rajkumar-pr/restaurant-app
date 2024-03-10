@@ -11,7 +11,7 @@ const Home = () => {
         <div className="headerContainer">
           <h1>Food Website</h1>
           <p>Best Food In India</p>
-          <Link to="/menu">
+          <Link to="/back">
             <button>ORDER NOW</button>
           </Link>
         </div>
