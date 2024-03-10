@@ -75,10 +75,11 @@ const App = () => {
           required
         />
       </div>
+<br/>
       <button type="button" onClick={handleSignup}>
         Signup
       </button>
-
+<br/>
       <button type="button" onClick={handleLogin}>
         Login
       </button>
